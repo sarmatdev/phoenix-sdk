@@ -1,9 +1,6 @@
 [workspace]
 resolver = "2"
-members = [
-    "phoenix-sdk",
-    "phoenix-sdk-core"
-]
+members = ["phoenix-sdk", "phoenix-sdk-core"]
 
 [profile.release]
 lto = "fat"
@@ -19,8 +16,8 @@ solana-client = ">=1.14.12, <1.18"
 borsh = "0.9.3"
 rand = "0.7.3"
 ellipsis-client = "1.0.0"
-ellipsis-transaction-utils = "1.0.0" 
-phoenix-common = { version = "0.2.1", features = [ "no-entrypoint" ]} 
+ellipsis-transaction-utils = "1.0.0"
+phoenix-common = { version = "0.2.1", features = ["no-entrypoint"] }
 tokio = { version = "1.23.0", features = ["full"] }
 clap = { version = "3.0.13", features = ["derive"] }
 shellexpand = "2.1.2"
@@ -28,6 +25,6 @@ num-traits = "0.2"
 rust_decimal = "1.26.1"
 rust_decimal_macros = "1.26"
 itertools = "0.10.5"
-bytemuck = "1.13.1"
+bytemuck = "1.14.0"
 serde = "^1.0.63"
 phoenix-seat-manager-common = "0.1.1"
